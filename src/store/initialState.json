@@ -1,0 +1,10 @@
+{
+	"controllers": {
+		"name":				"controllers",
+		"tune":				0,
+		"glide":			1,
+		"modMix": 		2,
+		"modDepth": 	3,
+		"lfoRate": 		4
+	}
+}
