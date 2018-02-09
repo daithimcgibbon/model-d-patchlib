@@ -7,7 +7,7 @@ export const controllers = (state={}, action) => {
         ...state,
         tune: action.tune
       }
-    case C.SET_CONTROLLER_GLIDE:
+    case C.SET_CONTROLLERS_GLIDE:
       return {
         ...state,
         glide: action.glide

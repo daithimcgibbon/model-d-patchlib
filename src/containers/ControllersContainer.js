@@ -22,7 +22,7 @@ const ControllersContainer = connect(
         dispatch(setControllersModDepth(modDepth))
       },
       onSetControllersLfoRate(lfoRate) {
-        setControllersLfoRate(lfoRate)
+        dispatch(setControllersLfoRate(lfoRate))
       }
     })
 )(Controllers)
