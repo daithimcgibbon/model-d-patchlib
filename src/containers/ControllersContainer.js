@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Controllers from '../components/Controllers'
-import { setControllersTune, setControllersGlide, setControllersModMix, setControllersModDepth, setControllersLfoRate } from '../actions'
+import { setControllersTune, setControllersGlide, setControllersModMix, setControllersModDepth, setControllersLfoRate } from '../actions/controllersActions'
 
 const ControllersContainer = connect(
   state =>
