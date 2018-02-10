@@ -1,4 +1,4 @@
-import C from '../constants/ControllersConstants'
+import C from '../constants/controllersConstants'
 
 export const controllers = (state={}, action) => {
   switch(action.type) {

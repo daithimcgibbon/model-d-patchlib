@@ -5,14 +5,14 @@ export default (props) => {
 
   const name = props.controllers.name
   const { tune, glide, modMix, modDepth, lfoRate } = props.controllers
-  const { onSetControllersTune, onSetControllersGlide, onSetControllersModMix, onSetControllersModDepth, onSetControllersLfoRate } = props
+  const { onSetTune, onSetGlide, onSetModMix, onSetModDepth, onSetLfoRate } = props
 
   return (
     <div className="container border border-dark rounded p-2">
 
       <div className="row p-2">
         <div className="col-4 text-center" />
-        <div className="col-4 text-center"><SynthKnob value={tune} onChangeValue={onSetControllersTune} /></div>
+        <div className="col-4 text-center"><SynthKnob value={tune} onChangeValue={onSetTune} /></div>
         <div className="col-4 text-center" />
       </div>
       <div className="row p-2">
@@ -22,9 +22,9 @@ export default (props) => {
       </div>
 
       <div className="row p-2">
-        <div className="col-4 text-center"><SynthKnob value={glide} onChangeValue={onSetControllersGlide} /></div>
+        <div className="col-4 text-center"><SynthKnob value={glide} onChangeValue={onSetGlide} /></div>
         <div className="col-4 text-center"></div>
-        <div className="col-4 text-center"><SynthKnob value={modMix} onChangeValue={onSetControllersModMix} /></div>
+        <div className="col-4 text-center"><SynthKnob value={modMix} onChangeValue={onSetModMix} /></div>
       </div>
       <div className="row p-2">
         <div className="col-4 text-center small">GLIDE</div>
@@ -33,9 +33,9 @@ export default (props) => {
       </div>
 
       <div className="row p-2">
-        <div className="col-4 text-center"><SynthKnob value={modDepth} onChangeValue={onSetControllersModDepth} /></div>
+        <div className="col-4 text-center"><SynthKnob value={modDepth} onChangeValue={onSetModDepth} /></div>
         <div className="col-4 text-center"></div>
-        <div className="col-4 text-center"><SynthKnob value={lfoRate} onChangeValue={onSetControllersLfoRate} /></div>
+        <div className="col-4 text-center"><SynthKnob value={lfoRate} onChangeValue={onSetLfoRate} /></div>
       </div>
       <div className="row p-2">
         <div className="col-4 text-center small">MOD DEPTH</div>

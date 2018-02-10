@@ -1,30 +1,30 @@
-import C from '../constants/ControllersConstants'
+import C from '../constants/controllersConstants'
 
-export const setControllersTune = (tune=0) =>
+export const setTune = (tune=0) =>
   ({
     type: C.SET_TUNE,
     tune: tune
   })
 
-export const setControllersGlide = (glide=0) =>
+export const setGlide = (glide=0) =>
   ({
     type: C.SET_GLIDE,
     glide: glide
   })
 
-export const setControllersModMix = (modMix=0) =>
+export const setModMix = (modMix=0) =>
   ({
     type: C.SET_MOD_MIX,
     modMix: modMix
   })
 
-export const setControllersModDepth = (modDepth=0) =>
+export const setModDepth = (modDepth=0) =>
   ({
     type: C.SET_MOD_DEPTH,
     modDepth: modDepth
   })
 
-export const setControllersLfoRate = (lfoRate=0) =>
+export const setLfoRate = (lfoRate=0) =>
   ({
     type: C.SET_LFO_RATE,
     lfoRate: lfoRate

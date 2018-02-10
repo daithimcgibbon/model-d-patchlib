@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Controllers from '../components/Controllers'
-import { setControllersTune, setControllersGlide, setControllersModMix, setControllersModDepth, setControllersLfoRate } from '../actions/controllersActions'
+import { setTune, setGlide, setModMix, setModDepth, setLfoRate } from '../actions/controllersActions'
 
 const ControllersContainer = connect(
   state =>
@@ -9,20 +9,20 @@ const ControllersContainer = connect(
     }),
   dispatch =>
     ({
-      onSetControllersTune(tune) {
-        dispatch(setControllersTune(tune))
+      onSetTune(tune) {
+        dispatch(setTune(tune))
       },
-      onSetControllersGlide(glide) {
-        dispatch(setControllersGlide(glide))
+      onSetGlide(glide) {
+        dispatch(setGlide(glide))
       },
-      onSetControllersModMix(modMix) {
-        dispatch(setControllersModMix(modMix))
+      onSetModMix(modMix) {
+        dispatch(setModMix(modMix))
       },
-      onSetControllersModDepth(modDepth) {
-        dispatch(setControllersModDepth(modDepth))
+      onSetModDepth(modDepth) {
+        dispatch(setModDepth(modDepth))
       },
-      onSetControllersLfoRate(lfoRate) {
-        dispatch(setControllersLfoRate(lfoRate))
+      onSetLfoRate(lfoRate) {
+        dispatch(setLfoRate(lfoRate))
       }
     })
 )(Controllers)
